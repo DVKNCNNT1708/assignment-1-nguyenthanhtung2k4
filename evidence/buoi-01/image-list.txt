@@ -1,0 +1,20 @@
+# Docker image list
+
+Trang thai hien tai: chua lay duoc danh sach image.
+
+Ly do:
+- `docker image ls` timeout trong phien kiem tra.
+- Docker pipe `\\.\pipe\docker_engine` bi `Access is denied`.
+- Service `com.docker.service` dang `Stopped`.
+
+Can chay lai khi Docker Desktop da running:
+
+```powershell
+docker image ls --format "table {{.Repository}}:{{.Tag}}`t{{.ID}}`t{{.Size}}"
+```
+
+Neu chua co image dung cho hoc phan, chay:
+
+```powershell
+.\scripts\pull_all.ps1
+```

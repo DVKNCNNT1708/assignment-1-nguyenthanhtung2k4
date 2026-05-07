@@ -1,0 +1,14 @@
+# docker run --rm hello-world
+
+Trang thai hien tai: chua co output thanh cong.
+
+Ghi chu:
+- Docker CLI da co version: Docker version 28.0.1.
+- Khi chay tu phien nay, Docker daemon/pipe bi `Access is denied` hoac timeout.
+- Can mo Docker Desktop, dam bao Docker daemon running, sau do chay lai:
+
+```powershell
+docker run --rm hello-world
+```
+
+Khi chay thanh cong, file nay nen duoc script `collect_session01_evidence.ps1` ghi de bang output that cua Docker.

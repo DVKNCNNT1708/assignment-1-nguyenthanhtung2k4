@@ -1,0 +1,27 @@
+# Smoke test result
+
+Trang thai hien tai: smoke test chua chay xong do Docker daemon chua truy cap duoc.
+
+Da kiem tra duoc:
+
+- Git: OK, `git version 2.46.2.windows.1`
+- Node.js: OK, `v24.15.0`
+- npm: OK, `11.5.2`
+- Python env `api-platform`: OK, Python 3.11.15
+- Docker CLI: OK, Docker version 28.0.1
+- Docker Compose CLI: OK, Docker Compose version v2.33.1-desktop.1
+
+Chua kiem tra thanh cong:
+
+- `docker info`
+- `docker run --rm hello-world`
+- Docker image inspect/list
+- Compose mini-stack
+
+Can chay lai:
+
+```powershell
+$env:PATH = "C:\Program Files\Docker\Docker\resources\bin;C:\Users\tungb\anaconda3\envs\api-platform;C:\Users\tungb\anaconda3\envs\api-platform\Scripts;$env:PATH"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\smoke_test.ps1
+```

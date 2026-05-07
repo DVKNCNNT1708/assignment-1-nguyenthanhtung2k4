@@ -25,3 +25,4 @@ pnpm-lock.yaml
 # Large AI model files
 models/*.pt
 models/*.onnx
+khongPUSH
